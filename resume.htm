@@ -3,44 +3,11 @@
 <head>
     <title>Resume | Lucas Michael Brown</title>
     <meta charset="utf-8">
+    <meta name="author" content="Lucas Michael Brown">
+    <meta name="description" content="Professional resume and technical skills of Lucas Michael Brown, aspiring software developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Keeping my existing theme */
-        body {
-            background-color: #0b0e14;
-            color: #7F7F7F;
-            font-family: "Lucida Console", "Arial Black", sans-serif;
-            width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1 { color: #00d4ff; text-align: center; font-size: 48px; }
-        h2 { color: #ff0055; border-bottom: 1px solid #333; margin-top: 30px; }
-        nav { text-align: center; padding: 15px; background-color: #161b22; margin-bottom: 20px; border-radius: 8px; }
-        nav a { color: #00d4ff; text-decoration: none; padding: 0 15px; font-weight: bold; }
-        nav a:hover { color: #ff0055; }
-        main { background-color: #11151c; padding: 30px; border-radius: 8px; }
-        #wrapper { border: 2px solid #333; padding: 10px; background-color: #0b0e14; }
-        
-        /* Specific Resume Styling */
-        .job-title { color: #00d4ff; font-weight: bold; }
-        .date { font-style: italic; color: #ff0055; float: right; }
-        ul { line-height: 1.8; }
-        .skill-category { font-weight: bold; color: #00d4ff; }
-        .download-btn {
-            display: block;
-            width: 250px;
-            margin: 20px auto;
-            padding: 10px;
-            background-color: #ff0055;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .download-btn:hover { background-color: #00d4ff; color: #0b0e14; }
-    </style>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <div id="wrapper">
@@ -50,9 +17,12 @@
         </header>
 
         <nav>
-            <a href="index.htm">Home</a> |
-            <a href="resume.htm">My Resume</a> |
-            <a href="https://github.com/lucasmbrown1-ctrl" target="_blank">GitHub Profile</a>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="resume.htm">Resume</a></li>
+                <li><a href="transcript.htm">Transcript</a></li>
+                <li><a href="https://github.com/lucasmbrown1-ctrl" target="_blank">GitHub Profile</a></li>
+            </ul>
         </nav>
 
         <main>
@@ -87,11 +57,15 @@
                 <p><span class="job-title">A.S. in Computer Science & Programming</span><br>
                 Relevant Coursework: Java, Python, HTML/CSS Style Coding</p>
             </section>
+
+            <section id="transcript-link" style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px;">
+                <p>View my academic progress and professional references:</p>
+                <a href="transcript.htm" style="color: #00d4ff; font-weight: bold; font-size: 1.2em;">Official Transcript &amp; References</a>
+            </section>
         </main>
 
         <footer style="text-align: center; margin-top: 30px;">
             <p>&copy; 2026 Lucas Michael Brown</p>
         </footer>
-    </div>
-</body>
+    </div> </body>
 </html>

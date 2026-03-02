@@ -1,12 +1,28 @@
+/* Add to the very top of your stylesheet as required */
+* {
+    box-sizing: border-box;
+}
+
 /* General Page Styles */
 body {
     background-color: #0b0e14; /* Deep Dark Background */
     color: #7F7F7F;            /* Grey Text */
     font-family: "Lucida Console", "Arial Black", sans-serif;
-    width: 90%; 
+    width: 98%;                /* Changed to 98% per RWD instructions */
     max-width: 1000px; 
     margin: auto;
     padding: 20px;
+}
+
+/* Updated Header with Background Image Requirement */
+header {
+    background-image: url('images/banner-bg.jpg'); /* Ensure this image is optimized */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px; /* Adds space around the H1 to show the background */
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -14,6 +30,7 @@ h1 {
     font-size: 3.5em; 
     text-align: center;
     margin-top: 0;
+    text-shadow: 2px 2px 4px #000; /* Makes text readable over background */
 }
 
 h2 {
@@ -28,7 +45,7 @@ p {
     margin-bottom: 15px;
 }
 
-/*  Navigation  */
+/* Navigation  */
 nav {
     width: 100%;
     text-align: center;
@@ -68,6 +85,36 @@ nav a:hover {
     }
 }
 
+/* --- Portfolio Specific Styles (NEW) --- */
+#figureContainer {
+    text-align: center; /* Centers the images in the container */
+    padding: 20px 0;
+}
+
+img {
+    max-width: 100%; /* Makes images responsive */
+    height: auto;
+    border: 1px solid #333;
+}
+
+figure {
+    display: inline-block;
+    width: 320px;      /* Set to 320px for three columns on desktop */
+    text-align: center;
+    margin: 15px;
+    background-color: #161b22;
+    padding: 10px;
+    border-radius: 5px;
+    vertical-align: top;
+}
+
+figcaption {
+    color: #00d4ff;    /* Neon Blue for captions */
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* --- End Portfolio Styles --- */
+
 /* --- Page Layout Elements --- */
 main {
     background-color: #11151c; /* Dark Main Content Area */
@@ -86,9 +133,10 @@ main {
     padding: 15px;
     margin-top: 20px;
     background-color: #161b22; /* Same as Nav background */
-    color: #00d4ff;            /* Neon Blue Text */
+    color: #00d4ff;             /* Neon Blue Text */
 }
 
+/* Custom closing comment style preserved */
 footer {
     text-align: center;
     margin-top: 50px;
@@ -139,7 +187,7 @@ footer {
 
 .download-btn:hover {
     background-color: #00d4ff; /* Hover: Neon Blue */
-    color: #0b0e14;            /* Dark text on light background */
+    color: #0b0e14;             /* Dark text on light background */
 }
 
 /* --- Transcript Lists & Special Characters --- */

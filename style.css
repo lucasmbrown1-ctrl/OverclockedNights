@@ -1,40 +1,37 @@
-/* Add to the very top of your stylesheet as required */
-* {
+{
     box-sizing: border-box;
 }
 
-/* General Page Styles */
 body {
-    background-color: #0b0e14; /* Deep Dark Background */
-    color: #7F7F7F;            /* Grey Text */
+    background-color: #0b0e14;
+    color: #7F7F7F;
     font-family: "Lucida Console", "Arial Black", sans-serif;
-    width: 98%;                /* Changed to 98% per RWD instructions */
-    max-width: 1000px; 
+    width: 98%;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
-/* Updated Header with Background Image Requirement */
 header {
-    background-image: url('images/banner-bg.jpg'); /* Ensure this image is optimized */
+    background-image: url('images/banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 60px 20px; /* Adds space around the H1 to show the background */
+    padding: 60px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 h1 {
-    color: #00d4ff;           /* Neon Blue */
-    font-size: 3.5em; 
+    color: #00d4ff; /* Neon Blue */
+    font-size: 3.5em;
     text-align: center;
     margin-top: 0;
-    text-shadow: 2px 2px 4px #000; /* Makes text readable over background */
+    text-shadow: 2px 2px 4px #000;
 }
 
 h2 {
-    color: #ff0055;           /* Hot Pink / Neon Red */
+    color: #ff0055; /* Neon Red */
     border-bottom: 1px solid #333;
     padding-top: 20px;
 }
@@ -45,98 +42,42 @@ p {
     margin-bottom: 15px;
 }
 
-/* Navigation  */
 nav {
     width: 100%;
     text-align: center;
-    background-color: #161b22; /* Darker Blue/Grey Nav Background */
+    background-color: #161b22;
     margin-bottom: 20px;
     border-radius: 8px;
     padding: 10px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: #00d4ff;           /* Neon Blue Links */
-    text-decoration: none;
-    font-size: 1.5em; 
-    font-weight: bold;
-    display: block;           /* Mobile View: Vertical Stack */
-    padding: 10px;
-}
-
-nav a:hover {
-    color: #ff0055;           /* Hover: Hot Pink! */
-}
-
-/* Desktop View (Wider than 640px) */
-@media only screen and (min-width: 640px) {
-    nav a {
-        display: inline;      /* PC View: Horizontal Side-by-Side */
-        padding: 0 15px;
-    }
-    nav li {
-        display: inline;
-    }
-}
-
-/* --- Portfolio Specific Styles (NEW) --- */
-#figureContainer {
-    text-align: center; /* Centers the images in the container */
-    padding: 20px 0;
-}
-
-img {
-    max-width: 100%; /* Makes images responsive */
-    height: auto;
-    border: 1px solid #333;
-}
-
-figure {
-    display: inline-block;
-    width: 320px;      /* Set to 320px for three columns on desktop */
-    text-align: center;
-    margin: 15px;
-    background-color: #161b22;
-    padding: 10px;
-    border-radius: 5px;
-    vertical-align: top;
-}
-
-figcaption {
-    color: #00d4ff;    /* Neon Blue for captions */
-    margin-top: 10px;
-    font-size: 14px;
-}
-/* --- End Portfolio Styles --- */
-
-/* --- Page Layout Elements --- */
 main {
-    background-color: #11151c; /* Dark Main Content Area */
+    background-color: #11151c;
     padding: 30px;
     border-radius: 8px;
 }
 
-#wrapper {
-    border: 2px solid #333;   /* Border around the whole site */
-    padding: 10px;
-    background-color: #0b0e14;
+/* NEW TABLE TAGS */
+table {
+    border: 4px solid #00d4ff; /* Neon Blue Border */
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
 }
 
-#social {
-    text-align: center;
+th {
+    background-color: #ff0055; /* Neon Red Header */
+    color: #ffffff;
     padding: 15px;
-    margin-top: 20px;
-    background-color: #161b22; /* Same as Nav background */
-    color: #00d4ff;             /* Neon Blue Text */
+    text-align: center;
 }
 
-/* Custom closing comment style preserved */
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    color: #7F7F7F;
+}
+
 footer {
     text-align: center;
     margin-top: 50px;
@@ -145,62 +86,37 @@ footer {
     font-size: 14px;
 }
 
-/* --- Resume & Specialty Classes --- */
+#wrapper {
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: #0b0e14;
+}
+
+#figureContainer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#social {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #161b22;
+    color: #00d4ff;
+}
+
+
+.required {
+    color: #ff0055; /* Neon Red */
+    font-weight: bold;
+}
+
 .important {
-    color: #ff0055;           /* Hot Pink */
+    color: #ff0055;
     font-weight: bold;
 }
 
 .highlight {
-    color: #00d4ff;           /* Neon Blue */
+    color: #00d4ff;
     font-style: italic;
-}
-
-.job-title {
-    color: #00d4ff;           /* Neon Blue */
-    font-weight: bold;
-}
-
-.date {
-    font-style: italic;
-    color: #ff0055;           /* Hot Pink */
-    float: right;
-}
-
-.skill-category {
-    font-weight: bold;
-    color: #00d4ff;           /* Neon Blue */
-}
-
-.download-btn {
-    display: block;
-    width: 250px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #ff0055; /* Hot Pink Button */
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.download-btn:hover {
-    background-color: #00d4ff; /* Hover: Neon Blue */
-    color: #0b0e14;             /* Dark text on light background */
-}
-
-/* --- Transcript Lists & Special Characters --- */
-.special-char {
-    color: purple;            /* Purple Color */
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-.course-list { 
-    list-style: square; 
-}
-
-.prof-list { 
-    list-style-image: url('star.png'); /* Custom Bullet Image */
 }

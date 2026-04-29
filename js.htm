@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Lab | Overclocked Nights</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Michael Brown">
+    <meta name="description" content="JavaScript interactivity lab featuring custom hardware-themed scripts for Overclocked Nights.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script src="scripts/site_utilities.js" type="text/javascript"></script>
+
+    <style>
+        /* Small internal style to help the JS list look clean */
+        .js-item { margin-bottom: 30px; padding: 15px; border-bottom: 1px solid #333; }
+        #totalResult { font-weight: bold; color: #00d4ff; }
+        .last-update { font-size: 0.8em; color: #888; text-align: center; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Overclocked Nights</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="resume.htm">Resume</a></li>
+                <li><a href="portfolio.htm">Portfolio</a></li>
+                <li><a href="transcript.htm">Transcript</a></li>
+                <li><a href="newsletter.htm">Newsletter</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="https://www.nvidia.com" target="_blank">Partner: NVIDIA</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>JavaScript System Utilities</h1>
+            <p>Below are 8 custom JavaScript routines integrated into the Overclocked Nights environment.</p>
+
+            <ol>
+                <li class="js-item">
+                    <h3>Thermal Warning (Mouseover Alert)</h3>
+                    <a href="#" onmouseover="alert('Warning: CPU Temps reaching 90°C! Please check liquid cooling loop.');">Hover for System Status</a>
+                </li>
+
+                <li class="js-item">
+                    <h3>Hardware Initialization (Button Alert)</h3>
+                    <input type="button" onclick="alert('System successfully overclocked to 5.2GHz!');" value="Initialize Overclock">
+                </li>
+
+                <li class="js-item">
+                    <h3>User Identification (Prompt)</h3>
+                    <script type="text/javascript">
+                        var userName = prompt("Please enter technician name for log access:", "Guest Builder");
+                        document.write("<strong>Access Granted:</strong> Welcome to the terminal, " + userName + ".");
+                    </script>
+                </li>
+
+                <li class="js-item">
+                    <h3>Deployment Logs (Last Update)</h3>
+                    <script type="text/javascript">
+                        var update = new Date(document.lastModified);
+                        document.write("<span class='last-update'>System Manifest Last Verified: " + (update.getMonth()+1) + "/" + update.getDate() + "/" + update.getFullYear() + "</span>");
+                    </script>
+                </li>
+
+                <li class="js-item">
+                    <h3>Power Supply Calculator (Calculation)</h3>
+                    <form name="calcForm">
+                        CPU Watts: <input type="text" name="cpu" size="5" value="125"> + 
+                        GPU Watts: <input type="text" name="gpu" size="5" value="350">
+                        <input type="button" value="Calculate Total" onclick="calculatePower()">
+                    </form>
+                    <p>Estimated Draw: <span id="totalResult">0</span> Watts</p>
+                    <script type="text/javascript">
+                        function calculatePower() {
+                            var c = parseInt(document.calcForm.cpu.value);
+                            var g = parseInt(document.calcForm.gpu.value);
+                            var total = c + g;
+                            document.getElementById('totalResult').innerHTML = total;
+                        }
+                    </script>
+                </li>
+
+                <li class="js-item">
+                    <h3>Precision Tooling (Cursor Effect)</h3>
+                    <p onmouseover="this.style.cursor='crosshair';" style="border: 1px dashed #555; padding: 10px; display: inline-block;">
+                        Hover here to switch to Precision Calibration Cursor (Crosshair Effect).
+                    </p>
+                </li>
+
+                <li class="js-item">
+                    <h3>System Theme Toggle (External JS)</h3>
+                    <p>This routine is called from an external .js file in your scripts folder.</p>
+                    <button onclick="toggleTheme()">Toggle Night Mode</button>
+                </li>
+
+                <li class="js-item">
+                    <h3>Hardware Documentation (Pop-Up)</h3>
+                    <a href="javascript: void(0);" onclick="window.open('transcript.htm', 'specs', 'height=400, width=600, left=300, top=200'); return false;">
+                        Open Tech Specs in Mini-Window
+                    </a>
+                </li>
+            </ol>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Overclocked Nights</p>
+        </footer>
+    </div>
+</body>
+</html>

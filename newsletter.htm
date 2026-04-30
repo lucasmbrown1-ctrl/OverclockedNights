@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio | Overclocked Nights Showcase</title>
+    <title>Newsletter | Overclocked Nights Tech Monthly</title>
     <meta charset="utf-8">
     <meta name="author" content="Lucas Michael Brown">
-    <meta name="description" content="View the custom PC builds and high-performance workstations created by Overclocked Nights.">
-    <meta name="keywords" content="PC Portfolio, Custom Builds, Gaming Rigs, Workstations">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -25,35 +22,37 @@
                 <li><a href="transcript.htm">Transcript</a></li>
                 <li><a href="newsletter.htm">Newsletter</a></li>
                 <li><a href="contact.htm">Contact</a></li>
-                <li><a href="media.htm">Media</a></li> <li><a href="js.htm">JS Lab</a></li> <li><a href="https://www.nvidia.com" target="_blank">Partner: NVIDIA</a></li>
+                <li><a href="media.htm">Media</a></li>
+                <li><a href="js.htm">JS Lab</a></li>
+                <li><a href="https://www.nvidia.com" target="_blank">Partner: NVIDIA</a></li>
             </ul>
         </nav>
 
         <main>
-            <h1>Our Portfolio</h1>
-            <p>A gallery of our elite custom builds and high-performance hardware configurations.</p>
+            <h1>The Overclocked Monthly</h1>
+            <p>Stay up to date with the latest hardware releases, thermal testing results, and custom build showcases.</p>
 
-            <div id="figureContainer">
-                <figure>
-                    <img src="images/pc1.jpg" alt="Liquid Cooled Gaming PC">
-                    <figcaption>Project Neon: Custom Liquid Loop</figcaption>
-                </figure>
+            <section id="latest-news">
+                <h2>April 2026 Edition</h2>
+                <p>This month, we are focusing on the shift toward <span class="highlight">DDR6 memory architecture</span> and how it impacts high-performance gaming rigs.</p>
+                
+                <h3>Top 3 Hardware Trends</h3>
+                <ul>
+                    <li>The rise of external AI processing units.</li>
+                    <li>Sub-ambient cooling loops for consumer workstations.</li>
+                    <li>Carbon-nanotube thermal interface materials.</li>
+                </ul>
+            </section>
 
-                <figure>
-                    <img src="images/pc2.jpg" alt="Matte Black Workstation">
-                    <figcaption>The Stealth Workstation: 128GB RAM</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/pc3.jpg" alt="White RGB Gaming Setup">
-                    <figcaption>Arctic Frost: High-Performance Build</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/pc4.jpg" alt="Open Air Test Bench">
-                    <figcaption>The Overclocker: Open-Air Bench</figcaption>
-                </figure>
-            </div> 
+            <section id="signup">
+                <h2>Subscribe to the Feed</h2>
+                <p>Get technical deep-dives sent straight to your inbox.</p>
+                <form action="FormProcess.php" method="post">
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" name="userEmail" id="userEmail" required placeholder="tech@example.com">
+                    <input type="submit" value="Join the List">
+                </form>
+            </section>
         </main>
 
         <div id="social">
@@ -73,5 +72,6 @@
                 </script>
             </p>
         </footer>
-    </div> </body>
+    </div>
+</body>
 </html>

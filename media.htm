@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media Lab | Overclocked Nights</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lucas Michael Brown">
+    <meta name="description" content="Multimedia demonstration featuring custom audio, video, and animations for Overclocked Nights.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Overclocked Nights</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="resume.htm">Resume</a></li>
+                <li><a href="portfolio.htm">Portfolio</a></li>
+                <li><a href="transcript.htm">Transcript</a></li>
+                <li><a href="newsletter.htm">Newsletter</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="https://www.nvidia.com" target="_blank">Partner: NVIDIA</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Multimedia Showcase</h1>
+            <p>A demonstration of modern web media integration.</p>
+
+            <ol>
+                <li style="margin-bottom: 40px;">
+                    <h3>Audio: Welcome Message</h3>
+                    <p>A personal audio greeting recorded for site visitors.</p>
+                    <audio controls>
+                        <source src="media/welcome.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </li>
+
+                <li style="margin-bottom: 40px;">
+                    <h3>Video: System Boot Demo</h3>
+                    <p>A short video showing hardware initialization.</p>
+                    <video width="320" height="240" controls>
+                        <source src="media/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </li>
+
+                <li style="margin-bottom: 40px;">
+                    <h3>Animation: Pulsing Tech Logo</h3>
+                    <p>A custom-made animated GIF showing hardware components.</p>
+                    <img src="media/tech.gif" alt="Hardware Animation" width="200">
+                </li>
+
+                <li style="margin-bottom: 40px;">
+                    <h3>Slideshow: Featured Builds</h3>
+                    <p>Cycle through our latest custom PC configurations.</p>
+                    <div style="width:100%; overflow:hidden; border:1px solid #333;">
+                        <marquee behavior="scroll" direction="left">
+                            <img src="images/pc1.jpg" height="150" alt="Build 1">
+                            <img src="images/pc2.jpg" height="150" alt="Build 2">
+                            <img src="images/pc3.jpg" height="150" alt="Build 3">
+                        </marquee>
+                    </div>
+                </li>
+
+                <li style="margin-bottom: 40px;">
+                    <h3>YouTube: Hardware Review</h3>
+                    <p>External video content related to high-performance PC building.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ra1G4C0SSE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </li>
+
+                <li style="margin-bottom: 40px;">
+                    <h3>Social: Instagram/Twitter Feed</h3>
+                    <p>Stay updated with our latest overclocking results.</p>
+                    <div style="border: 1px solid #00d4ff; padding: 20px; width: 300px;">
+                        [Instagram Feed Embed Link Goes Here]
+                    </div>
+                </li>
+            </ol>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Overclocked Nights</p>
+            <p style="font-size: 0.8em; color: #888;">
+                <script type="text/javascript">
+                    var update = new Date(document.lastModified);
+                    document.write("Last Updated: " + (update.getMonth()+1) + "/" + update.getDate() + "/" + update.getFullYear());
+                </script>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
